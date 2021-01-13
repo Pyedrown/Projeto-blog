@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blog do pedrão</title>
+        <link href="../../../../../style.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Painel principal-->
+        <div id="painel">
+            <a href="../../../ensinando.html">Ensinando</a>
+            <a href="../../../../../index.html">Blog Do Pedrão</a>
+            <a href="../../../../sobre/sobre.html">Sobre</a>
+        </div>
+        <!--Painel das cores-->
+        <div id="painel-cores">
+            <div id="cor-azul" class="cores"></div>
+            <div id="cor-vermelho" class="cores"></div>
+            <div id="cor-amarelo" class="cores"></div>
+            <div id="cor-verde" class="cores"></div>
+        </div>
+        <!--
+            Painel dos posts Ensinando
+        -->
+
+        <div id="painel-post">
+            <p class="texto-post monospace">
+                Aqui nesse passo a passo iremos te mostrar como é o desenvolvimento de um site feito com as tecnologias html e css.
+            </p>
+            <p class="texto-post monospace">
+                caso você queira algo mais técnico e especifico de cada parte do desenvolvimento web
+            </p>
+            <p class="texto-post monospace">
+                Você pode visitar minha biblioteca onde fica todo meu conhecimento bem claro sobre cada parte do desenvolvimento web clicando <a href="#"
+                target="_blank" class="link-redirecionamento">aqui</a>
+            </p>
+            <p class="texto-post monospace">
+                Ou você pode visitar a documentação da MDN mozila clicando <a href="#"
+                target="_blank" class="link-redirecionamento">aqui</a>, lá é você vai encontrar praticamente tudo o que precisa, eu recomendo mais, pois em minha biblioteca não é completo 
+                
+            </p>
+            <h1 class="titulo-post monospace">
+                Passo a passo
+            </h1>
+            <p class="texto-post monospace">
+                Primeira coisa que deve ser feito antes de começar a programação de fato é o rascunho dele, e também tem que pensar em algumas coisas como...
+            </p>
+            <div class="painel-lista">
+                <ul class="lista">
+                    <li>Sobre o que é seu site?</li>
+                    <li>Quais informações você quer transmitir ao seu site?</li>
+                    <li>Como será seu site?</li>
+                </ul>
+            </div>
+            <p class="texto-post monospace">
+                Respondendo a essas perguntas, você terá a ideia sobre seu site, a partir da ae estará preparado para o proximo passo
+            </p>
+            <h1 class="titulo-post monospace">
+                Rascunho
+            </h1>
+            <img src="./image/rascunho.jpg" width="750" height="500">
+            <p class="texto-post monospace">
+                Existe duas forma que conheço para rascunhar seu site, uma é pegando lápis e papel e desenhando, e outra é usando uma ferramenta digital chamada Adobe XD
+            </p>
+            <p class="texto-post monospace">
+                Mas a segunda opção você terá que aprender a usar a ferramenta, isso deixaremos para um outro post
+            </p>
+            <p class="texto-post monospace">
+                Vamos ao jeito tradicional!!!
+            </p>
+            <figure>
+                <img src="image/mdnMozilla.png"/ alt="Imagem MDN">
+                <figcaption class="figcaption">Imagem pega do site MDN</figcaption>
+            </figure>
+            <p class="texto-post monospace">
+                Não tem segredo, basta pegar uma folha e lápis e desenhar a estrutura de seu site, pode ser igual a dessa imagem, é importante começar pequeno
+            </p>
+            <p class="texto-post monospace">
+                As cores do seu site você pode pegar clicando nessa imagem, onde será redirecionado a um site, um seletor de cores
+            </p>
+            <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Colors/seletor_de_cores" class="link-redirecionamento">
+                <img src="image/CapturaDeTela1.PNG" width="679" height="327.5" alt="Seletor de cores da MDN"/>
+            </a>
+            
+            <p class="texto-post monospace">
+                A fonte você pode pegar clicando na imagem
+            </p>
+            <a
+            href="https://fonts.google.com/"class="link-redirecionamento"
+            >
+                <img src="image/googleFontes.PNG" width="677.5" height="327" alt="google fotos"
+            </a>
+        </div>
+        
+        <script>
+            /*Painel das cores codigo*/
+            var corAzul = window.document.getElementById('cor-azul')
+            var corVermelha = window.document.getElementById('cor-vermelho')
+            var corAmarelo = window.document.getElementById('cor-amarelo')
+            var corVerde = window.document.getElementById('cor-verde')
+            var corpo = window.document.body
+            var painel = window.document.getElementById('painel')
+            var painelCores = window.document.getElementById('painel-cores')
+            corAzul.addEventListener('click', clicarCorAzul)
+            function clicarCorAzul() {
+                corpo.style.background = '#333863'
+                painel.style.background = '#40467c'
+                painelCores.style.background = '#393f6e'
+            }
+            corVermelha.addEventListener('click', clicarCorVermelha)
+            function clicarCorVermelha() {
+                corpo.style.background = '#573131'
+                painel.style.background = '#794040'
+                painelCores.style.background = '#6d3838'
+            }
+            corAmarelo.addEventListener('click', clicarCorAmarelo)
+            function clicarCorAmarelo() {
+                corpo.style.background = '#8a8946'
+                painel.style.background = '#afae55'
+                painelCores.style.background = '#9b9a4e'
+            }
+            corVerde.addEventListener('click', clicarCorVerde)
+            function clicarCorVerde() {
+                corpo.style.background = '#3b793b'
+                painel.style.background = '#4e9e4e'
+                painelCores.style.background = '#448b44'
+            }
+        </script>
+    </body>
+</html>
