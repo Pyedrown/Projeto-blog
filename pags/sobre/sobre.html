@@ -2,77 +2,50 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Blog do pedrão</title>
-        <link href="../../style.css" rel="stylesheet"/>
+        <link href="/style/style.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!--Painel principal-->
-        <div id="painel">
-            <a href="../ensinando/ensinando.html">Ensinando</a>
-            <a href="../../index.html">Blog Do Pedrão</a>
-            <a href="sobre.html">Sobre</a>
-        </div>
-        <!--Painel das cores-->
-        <div id="painel-cores">
-            <div id="cor-azul" class="cores"></div>
-            <div id="cor-vermelho" class="cores"></div>
-            <div id="cor-amarelo" class="cores"></div>
-            <div id="cor-verde" class="cores"></div>
-        </div>
-        <!--
-            Painel do sobre
-        -->
-        <div id="painel-sobre">
-            <h1>Pedro Paulo</h1>
-            <img src="img/Programador.jpg" width="200" height="200" alt="Programador-Pedro"/>
-            <p>Sou um programador entusiasta e amante da area de programação e design, meu sonho é viver daquilo que amo fazer, mais do que um trabalho, faço sites e aplicativos como se estivesse escupindo uma pintura, quero dominar varias tecnologias para poder conseguir criar qualquer coisa e transmitir esse conhecimento para as pessoas</p>
-            <div id="links">
-                <a target="_blank" href="https://www.facebook.com/Pyedrown/">
-                    <img src="img/facebook.logo.png" width="50" height="50" alt="facebook"/>
-                </a>
-                <a target="_blank" href="https://github.com/Pyedrown">
-                    <img src="img/github-logo.png" width="50" height="50" alt="github"/>
-                </a>
-                <a target="_blank" href="https://www.instagram.com/pyedrown/?hl=pt-br">
-                    <img src="img/instagram-icon.png" width="50" height="50" alt="instagram"/>
-                </a>
+        <header>
+            <!--Painel principal-->
+            <div id="painel">
+                <a href="../ensinando/ensinando.html">Ensinando</a>
+                <a href="../../index.html">Blog Do Pedrão</a>
+                <a href="sobre.html">Sobre</a>
             </div>
-        </div>
-        <script>
-            /*Painel das cores codigo*/
-            var corAzul = window.document.getElementById('cor-azul')
-            var corVermelha = window.document.getElementById('cor-vermelho')
-            var corAmarelo = window.document.getElementById('cor-amarelo')
-            var corVerde = window.document.getElementById('cor-verde')
-            var corpo = window.document.body
-            var painel = window.document.getElementById('painel')
-            var painelCores = window.document.getElementById('painel-cores')
-            corAzul.addEventListener('click', clicarCorAzul)
-            function clicarCorAzul() {
-                corpo.style.background = '#333863'
-                painel.style.background = '#40467c'
-                painelCores.style.background = '#393f6e'
-            }
-            corVermelha.addEventListener('click', clicarCorVermelha)
-            function clicarCorVermelha() {
-                corpo.style.background = '#573131'
-                painel.style.background = '#794040'
-                painelCores.style.background = '#6d3838'
-            }
-            corAmarelo.addEventListener('click', clicarCorAmarelo)
-            function clicarCorAmarelo() {
-                corpo.style.background = '#8a8946'
-                painel.style.background = '#afae55'
-                painelCores.style.background = '#9b9a4e'
-            }
-            corVerde.addEventListener('click', clicarCorVerde)
-            function clicarCorVerde() {
-                corpo.style.background = '#3b793b'
-                painel.style.background = '#4e9e4e'
-                painelCores.style.background = '#448b44'
-            }
-        </script>
+            <!--Painel das cores-->
+            <div id="painel-cores">
+                <div id="cor-azul" class="cores"></div>
+                <div id="cor-vermelho" class="cores"></div>
+                <div id="cor-amarelo" class="cores"></div>
+                <div id="cor-verde" class="cores"></div>
+            </div>
+        </header>
+        <main>
+
+            <!--
+                Painel do sobre
+            -->
+            <div id="painel-sobre">
+                <h1>Pedro Paulo</h1>
+                <img src="img/Programador.jpg" width="200" height="200" alt="Programador-Pedro"/>
+                <p>Sou um programador entusiasta e amante da area de programação e design, meu sonho é viver daquilo que amo fazer, mais do que um trabalho, faço sites e aplicativos como se estivesse escupindo uma pintura, quero dominar varias tecnologias para poder conseguir criar qualquer coisa e transmitir esse conhecimento para as pessoas</p>
+                <div id="links">
+                    <a target="_blank" href="https://www.facebook.com/Pyedrown/">
+                        <img src="img/facebook.logo.png" width="50" height="50" alt="facebook"/>
+                    </a>
+                    <a target="_blank" href="https://github.com/Pyedrown">
+                        <img src="img/github-logo.png" width="50" height="50" alt="github"/>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/pyedrown/?hl=pt-br">
+                        <img src="img/instagram-icon.png" width="50" height="50" alt="instagram"/>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <script src="/script/script.js"></script>
     </body>
 </html>

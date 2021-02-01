@@ -114,6 +114,12 @@ header {
     text-align: center;
 }
 
+.titulo {
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+
 /*Dentro do post*/
 
 #painel-post {
@@ -126,8 +132,19 @@ header {
     display: block;
     color: white;
     text-align: center;
-    margin: 1.5vmax 20vmax;
+    margin: 1.5vmax 12vmax;
     font-size: 35px;
+}
+
+img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+li {
+    font-size: 4vw;
 }
 
 /*Painel do sobre*/
@@ -184,3 +201,48 @@ header {
     text-align: center;
 }
 
+/*
+
+
+
+*/
+
+/*Adaptações*/
+
+@media screen and (max-width: 1000px) {
+    .texto-post {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    li {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 517px) {
+    div#painel > a {
+        font-size: 20px;
+    }
+
+    .descricao, .posts, .painel-posts {
+        width: auto;
+    }
+
+    .descricao {
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    .texto-post {
+        font-size: 5vw;
+    }
+
+    .titulo-post {
+        font-size: 8vw;
+    }
+}
+
+/*Ajeitando responsividade fim*/

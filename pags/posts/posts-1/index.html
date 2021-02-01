@@ -2,68 +2,41 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Blog do pedrão</title>
-        <link href="../../../style.css" rel="stylesheet"/>
+        <link href="/style/style.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!--Painel principal-->
-        <div id="painel">
-            <a href="../../../index.html">Blog Do Pedrão</a>
-            <a href="../../sobre/sobre.html">Sobre</a>
-        </div>
-        <!--Painel das cores-->
-        <div id="painel-cores">
-            <div id="cor-azul" class="cores"></div>
-            <div id="cor-vermelho" class="cores"></div>
-            <div id="cor-amarelo" class="cores"></div>
-            <div id="cor-verde" class="cores"></div>
-        </div>
-        <!--Painel do post-->
-        <div id="painel-post">
-            <h1 class="titulo-post">Título do post</h1>
-            <p class="texto-post">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium blandit diam, id facilisis nulla egestas sed. Cras sit amet arcu maximus sem porttitor facilisis. Pellentesque ut fermentum massa, sit amet ullamcorper mi. Nulla accumsan massa vitae maximus cursus. Vestibulum vitae ligula congue mauris rutrum eleifend. Cras felis felis, lacinia et nulla lacinia, finibus ultrices leo. Nam pharetra nulla at sapien mattis, nec fermentum urna fringilla. Donec sed eleifend ex. Suspendisse non pellentesque arcu, vel varius leo.
-            </p>
-            <img src="img/img.jpg" width="512" height="288"/ alt="natureza">
-            <p class="texto-post">
-                Curabitur porta, urna et sodales viverra, tellus sapien molestie diam, vel ultrices tortor elit elementum nibh. Duis nec diam felis. Phasellus cursus finibus urna, sit amet auctor leo vehicula non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vitae tincidunt enim, varius blandit ligula. Vestibulum malesuada nulla sit amet nunc feugiat, eget blandit tellus dapibus. Suspendisse et lacus imperdiet, pretium nisi nec, molestie eros. Phasellus eget leo odio. Nullam sed est felis. Sed et bibendum purus. Morbi venenatis venenatis ex, at bibendum nibh sagittis ultrices. Sed vel urna pretium odio bibendum dapibus. Integer aliquam sit amet turpis sit amet facilisis. Nam porta congue imperdiet.
-            </p>
-        </div>
-        <script>
-            /*Painel das cores codigo*/
-            var corAzul = window.document.getElementById('cor-azul')
-            var corVermelha = window.document.getElementById('cor-vermelho')
-            var corAmarelo = window.document.getElementById('cor-amarelo')
-            var corVerde = window.document.getElementById('cor-verde')
-            var corpo = window.document.body
-            var painel = window.document.getElementById('painel')
-            var painelCores = window.document.getElementById('painel-cores')
-            corAzul.addEventListener('click', clicarCorAzul)
-            function clicarCorAzul() {
-                corpo.style.background = '#333863'
-                painel.style.background = '#40467c'
-                painelCores.style.background = '#393f6e'
-            }
-            corVermelha.addEventListener('click', clicarCorVermelha)
-            function clicarCorVermelha() {
-                corpo.style.background = '#573131'
-                painel.style.background = '#794040'
-                painelCores.style.background = '#6d3838'
-            }
-            corAmarelo.addEventListener('click', clicarCorAmarelo)
-            function clicarCorAmarelo() {
-                corpo.style.background = '#8a8946'
-                painel.style.background = '#afae55'
-                painelCores.style.background = '#9b9a4e'
-            }
-            corVerde.addEventListener('click', clicarCorVerde)
-            function clicarCorVerde() {
-                corpo.style.background = '#3b793b'
-                painel.style.background = '#4e9e4e'
-                painelCores.style.background = '#448b44'
-            }
-        </script>
+        <header>
+            <!--Painel principal-->
+            <div id="painel">
+                <a href="../../../index.html">Blog Do Pedrão</a>
+                <a href="../../sobre/sobre.html">Sobre</a>
+            </div>
+            <!--Painel das cores-->
+            <div id="painel-cores">
+                <div id="cor-azul" class="cores"></div>
+                <div id="cor-vermelho" class="cores"></div>
+                <div id="cor-amarelo" class="cores"></div>
+                <div id="cor-verde" class="cores"></div>
+            </div>
+        </header>
+        <main>
+
+            <!--Painel do post-->
+            <div id="painel-post">
+                <h1 class="titulo-post">Título do post</h1>
+                <p class="texto-post">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium blandit diam, id facilisis nulla egestas sed. Cras sit amet arcu maximus sem porttitor facilisis. Pellentesque ut fermentum massa, sit amet ullamcorper mi. Nulla accumsan massa vitae maximus cursus. Vestibulum vitae ligula congue mauris rutrum eleifend. Cras felis felis, lacinia et nulla lacinia, finibus ultrices leo. Nam pharetra nulla at sapien mattis, nec fermentum urna fringilla. Donec sed eleifend ex. Suspendisse non pellentesque arcu, vel varius leo.
+                </p>
+                <img src="img/img.jpg" width="512" height="288"/ alt="natureza">
+                <p class="texto-post">
+                    Curabitur porta, urna et sodales viverra, tellus sapien molestie diam, vel ultrices tortor elit elementum nibh. Duis nec diam felis. Phasellus cursus finibus urna, sit amet auctor leo vehicula non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vitae tincidunt enim, varius blandit ligula. Vestibulum malesuada nulla sit amet nunc feugiat, eget blandit tellus dapibus. Suspendisse et lacus imperdiet, pretium nisi nec, molestie eros. Phasellus eget leo odio. Nullam sed est felis. Sed et bibendum purus. Morbi venenatis venenatis ex, at bibendum nibh sagittis ultrices. Sed vel urna pretium odio bibendum dapibus. Integer aliquam sit amet turpis sit amet facilisis. Nam porta congue imperdiet.
+                </p>
+            </div>
+        </main>
+        <script src="/script/script.js"></script>
     </body>
 </html>
